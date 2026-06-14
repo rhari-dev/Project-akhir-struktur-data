@@ -2,6 +2,7 @@
 #include <string>
 #include <iomanip>
 #include <Windows.h>
+#include <conio.h>
 
 using namespace std;
 
@@ -20,6 +21,7 @@ int jumlahKurir = 0;
 
 void Registrasi();
 void Login();
+string inputPasswordTersembunyi();
 
 string spasi = "                    ";
 
@@ -73,6 +75,29 @@ int main() {
     return 0;
 }
 
+string inputPasswordTersembunyi() {
+    string password = "";
+    char ch;
+    while (true) {
+        ch = _getch(); 
+        if (ch == '\r') { 
+            break;
+        }
+        else if (ch == '\b') { 
+            if (!password.empty()) {
+                password.pop_back();
+                cout << "\b \b"; 
+            }
+        }
+        else if (ch >= 32 && ch <= 126) {
+            password.push_back(ch);
+            cout << '*';
+        }
+    }
+    cout << endl;
+    return password;
+}
+
 void Registrasi() {
     bool regis = true;
     do {
@@ -94,7 +119,7 @@ void Registrasi() {
         cin >> user;
 
         cout << spasi << "| Password: ";
-        cin >> pass;
+        pass = inputPasswordTersembunyi();
 
         switch (role) {
         case 1:
@@ -156,7 +181,7 @@ void Login() {
         cin >> user;
 
         cout << spasi << "| Password: ";
-        cin >> pass;
+        pass = inputPasswordTersembunyi();
 
         switch (role) {
         case 1:
