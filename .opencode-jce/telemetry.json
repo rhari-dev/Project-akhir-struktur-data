@@ -1,0 +1,99 @@
+[
+  {
+    "kind": "routing_decision",
+    "name": "bugfix",
+    "metadata": {
+      "intent": "bugfix",
+      "selectedSkills": [
+        "software-engineering",
+        "verification-discipline"
+      ],
+      "suppressedSkills": [],
+      "confidence": 97
+    },
+    "at": "2026-06-14T23:19:32.430Z"
+  },
+  {
+    "kind": "skill_selected",
+    "name": "software-engineering",
+    "metadata": {
+      "skill": "software-engineering",
+      "intent": "bugfix"
+    },
+    "at": "2026-06-14T23:19:32.450Z"
+  },
+  {
+    "kind": "skill_selected",
+    "name": "verification-discipline",
+    "metadata": {
+      "skill": "verification-discipline",
+      "intent": "bugfix"
+    },
+    "at": "2026-06-14T23:19:32.467Z"
+  },
+  {
+    "kind": "routing_decision",
+    "name": "auto_activation",
+    "metadata": {
+      "activate": false,
+      "confidence": 0.1,
+      "reason": "no concrete action verb",
+      "signals": []
+    },
+    "at": "2026-06-14T23:19:32.477Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "software-engineering",
+    "metadata": {
+      "skill": "software-engineering",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:32.627Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "verification-discipline",
+    "metadata": {
+      "skill": "verification-discipline",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:32.660Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "software-engineering",
+    "metadata": {
+      "skill": "software-engineering",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:33.587Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "verification-discipline",
+    "metadata": {
+      "skill": "verification-discipline",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:33.605Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "software-engineering",
+    "metadata": {
+      "skill": "software-engineering",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:39.890Z"
+  },
+  {
+    "kind": "skill_final_used",
+    "name": "verification-discipline",
+    "metadata": {
+      "skill": "verification-discipline",
+      "source": "system_injection"
+    },
+    "at": "2026-06-14T23:19:39.908Z"
+  }
+]

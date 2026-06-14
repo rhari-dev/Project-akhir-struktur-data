@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "updatedAt": "2026-06-14T23:19:40.171Z",
+  "memoryTiers": {
+    "session": {
+      "blockers": []
+    },
+    "project": {
+      "conventions": [],
+      "releaseFiles": [],
+      "standardVerification": [],
+      "dangerousAreas": []
+    },
+    "failure": {
+      "knownErrors": [],
+      "badFixes": [],
+      "successfulFixes": []
+    },
+    "operator": {
+      "preferTerseReports": false,
+      "preferAutonomousCompletion": false,
+      "preferBroadVerification": true
+    }
+  },
+  "facts": [],
+  "decisions": [],
+  "artifacts": [],
+  "evidence": [],
+  "wisdom": [],
+  "taskLearnings": [],
+  "sessionHistory": [
+    {
+      "id": "session-1781479166288-snc1",
+      "startedAt": "2026-06-14T23:19:26.288Z",
+      "nodesCompleted": 0,
+      "nodesFailed": 0,
+      "endedAt": "2026-06-14T23:19:40.171Z"
+    }
+  ],
+  "orchestration": {
+    "constraints": [],
+    "signals": []
+  },
+  "autonomyLevel": "balanced",
+  "operatorPreferences": {
+    "preferAutonomousCompletion": false,
+    "askBeforeArchitectureChange": true,
+    "preferBroadVerification": true,
+    "preferTerseReports": false,
+    "defaultReleaseStrictness": "medium"
+  }
+}
